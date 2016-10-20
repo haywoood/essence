@@ -1,0 +1,23 @@
+{
+  "name": "essence",
+  "version": "0.0.1",
+  "description": "it's a lib to build js apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "spa"
+  ],
+  "author": "Haywood",
+  "license": "MIT",
+  "dependencies": {
+    "mobx": "^2.2.2",
+    "mobx-react": "^3.3.1",
+    "mobx-react-devtools": "^4.2.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  }
+}
