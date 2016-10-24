@@ -1,20 +1,29 @@
 ```javascript
-import {state, ui, render} from "@lsdafjklsd/essence"
+import {update, state, ui, render} from "@lsdafjklsd/essence"
 
 const appState = state({
   count: 0
 })
 
 const resetCount = () => {
-  appState.count = 0
+  update(appState, appState => {
+    appState.count = 0
+    return appState
+  })
 }
 
 const incrementCount = () => {
-  appState.count = appState.count + 1
+  update(appState, appState => {
+    appState.count = appState.count + 1
+    return appState
+  })
 }
 
 const decrementCount = () => {
-  appState.count = appState.count - 1
+  update(appState, appState => {
+    appState.count = appState.count - 1
+    return appState
+  })
 }
 
 const App = ui(() => {
@@ -37,7 +46,7 @@ const App = ui(() => {
   )
 })
 
-render(<App />, document.getElementById("idOfContainer"))
+render(<App />, document.getElementById("root"))
 ```
 
 Almost no library or framework code, just works thanks to Mobx and React. Reagent is the next step after react-redux. This attempts to emulate Reagent using JS libs. This was composed to teach beginners, no frameworks to learn, 4 functions, just focus on creating functions that return html and functions that modify data.

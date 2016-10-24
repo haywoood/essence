@@ -1,6 +1,6 @@
 {
   "name": "@lsdafjklsd/essence",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "it's a lib to build js apps",
   "main": "index.js",
   "scripts": {
