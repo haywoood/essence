@@ -37,9 +37,9 @@ const App = ui(() => {
   )
 })
 
-render(<App />, "idOfContainer")
+render(<App />, document.getElementById("idOfContainer"))
 ```
 
-Almost no library or framework code, just works thanks to Mobx and React. Reagent is the next step after react-redux. This attempts to emulate Reagent using JS libs. This was composed to teach beginners, no frameworks to learn, 3 functions, just focus on creating functions that return html and functions that modify data.
+Almost no library or framework code, just works thanks to Mobx and React. Reagent is the next step after react-redux. This attempts to emulate Reagent using JS libs. This was composed to teach beginners, no frameworks to learn, 4 functions, just focus on creating functions that return html and functions that modify data.
 
 MIT
