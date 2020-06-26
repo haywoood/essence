@@ -1,5 +1,5 @@
 ```javascript
-import {update, state, ui, render} from "@lsdafjklsd/essence"
+import {update, state, ui, render} from "@haywoood/essence"
 
 const appState = state({
   count: 0
@@ -49,6 +49,6 @@ const App = ui(() => {
 render(<App />, document.getElementById("root"))
 ```
 
-Almost no library or framework code, just works thanks to Mobx and React. Reagent is the next step after react-redux. This attempts to emulate Reagent using JS libs. This was composed to teach beginners, no frameworks to learn, 4 functions, just focus on creating functions that return html and functions that modify data.
+This was composed to teach beginners, no frameworks to learn, 4 functions, just focus on creating functions that return html and functions that modify data.
 
 MIT
